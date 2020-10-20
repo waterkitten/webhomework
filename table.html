@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>表格网站</title>
+  <header>
+    <h2>文字界面</h2>
+  </header>
+  <style type="text/css">
+    header {
+      background-color: #666;
+      padding: 10px;
+      text-align: center;
+      font-size: 35px;
+      color: white;
+      height: 30rpx;
+    }
+
+    .scrolltable {
+      overflow-x: scroll;
+      height: 100%;
+      display: flex;
+      display: -webkit-flex;
+      flex-direction: column;
+      -webkit-flex-direction: column;
+    }
+
+    .scrolltable>.header {}
+
+    .scrolltable>.body {
+      /*noinspection CssInvalidPropertyValue*/
+      width: -webkit-fit-content;
+      overflow-y: scroll;
+      flex: 1;
+      -webkit-flex: 1;
+    }
+
+    th,
+    td {
+      min-width: 150px;
+    }
+
+    /* an outside constraint to react against */
+    #constrainer {
+      width: 40%;
+      height: 200px;
+    }
+
+    #constrainer2 {
+      width: 400px;
+      overflow-x: scroll;
+    }
+
+    #constrainer2 table {
+      overflow-y: scroll;
+    }
+
+    #constrainer2 tbody {
+      overflow-x: hidden;
+      display: block;
+      height: 200px;
+    }
+
+    #constrainer2 thead {
+      display: table-row;
+    }
+
+    /* only styling below here */
+    #constrainer,
+    #constrainer2 {
+      border: 1px solid lightgrey;
+    }
+
+    table {
+      border-collapse: collapse;
+    }
+
+    th,
+    td {
+      border: 1px solid gray;
+    }
+
+    th {
+      background-color: lightgrey;
+      border-width: 1px;
+    }
+
+    td {
+      border-width: 1px;
+    }
+
+    tr:first-child td {
+      border-top-width: 0;
+    }
+
+    tr:nth-child(even) {
+      background-color: #eee;
+    }
+
+    footer {
+      background-color: #777;
+      padding: 10px;
+      text-align: center;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h3>demo first</h3>
+
+  <div id="constrainer">
+    <div class="scrolltable">
+      <table class="header">
+        <thead>
+          <th>深圳大学</th>
+          <th>深圳大学</th>
+          <th>深圳大学`</th>
+          <th>深圳大学</th>
+        </thead>
+      </table>
+      <div class="body">
+        <table>
+          <tbody>
+            <tr>
+              <td>深圳大学</td>
+              <td>深圳大学</td>
+              <td>深圳大学</td>
+              <td>深圳大学</td>
+            </tr>
+            <tr>
+              <td>深圳大学</td>
+              <td>深圳大学</td>
+              <td>深圳大学</td>
+              <td>深圳大学</td>
+            </tr>
+            <tr>
+              <td>深圳大学</td>
+              <td>深圳大学</td>
+              <td>深圳大学</td>
+              <td>深圳大学</td>
+            </tr>
+            <tr>
+              <td>深圳大学</td>
+              <td>深圳大学</td>
+              <td>深圳大学</td>
+              <td>深圳大学</td>
+            </tr>
+            <tr>
+              <td>深圳大学</td>
+              <td>深圳大学</td>
+              <td>深圳大学</td>
+              <td>深圳大学</td>
+            </tr>
+            <tr>
+              <td>深圳大学</td>
+              <td>深圳大学</td>
+              <td>深圳大学</td>
+              <td>深圳大学</td>
+            </tr>
+            <tr>
+              <td>深圳大学</td>
+              <td>深圳大学</td>
+              <td>深圳大学</td>
+              <td>深圳大学</td>
+            </tr>
+            <tr>
+              <td>深圳大学</td>
+              <td>深圳大学</td>
+              <td>深圳大学</td>
+              <td>深圳大学</td>
+            </tr>
+            <tr>
+              <td>深圳大学</td>
+              <td>深圳大学</td>
+              <td>深圳大学</td>
+              <td>深圳大学</td>
+            </tr>
+            <tr>
+              <td>深圳大学</td>
+              <td>深圳大学</td>
+              <td>深圳大学</td>
+              <td>深圳大学</td>
+            </tr>
+            <tr>
+              <td>深圳大学</td>
+              <td>深圳大学</td>
+              <td>深圳大学</td>
+              <td>深圳大学</td>
+            </tr>
+            <tr>
+              <td>深圳大学</td>
+              <td>深圳大学</td>
+              <td>深圳大学</td>
+              <td>深圳大学</td>
+            </tr>
+            <tr>
+              <td>深圳大学</td>
+              <td>深圳大学</td>
+              <td>深圳大学</td>
+              <td>深圳大学</td>
+            </tr>
+            <tr>
+              <td>深圳大学</td>
+              <td>深圳大学</td>
+              <td>深圳大学</td>
+              <td>深圳大学</td>
+            </tr>
+            <tr>
+              <td>深圳大学</td>
+              <td>深圳大学</td>
+              <td>深圳大学</td>
+              <td>深圳大学</td>
+            </tr>
+            <tr>
+              <td>深圳大学</td>
+              <td>深圳大学</td>
+              <td>深圳大学</td>
+              <td>深圳大学</td>
+            </tr>
+            <tr>
+              <td>深圳大学</td>
+              <td>深圳大学</td>
+              <td>深圳大学</td>
+              <td>深圳大学</td>
+            </tr>
+            <tr>
+              <td>深圳大学</td>
+              <td>深圳大学</td>
+              <td>深圳大学</td>
+              <td>深圳大学</td>
+            </tr>
+            <tr>
+              <td>深圳大学</td>
+              <td>深圳大学</td>
+              <td>深圳大学</td>
+              <td>深圳大学</td>
+            </tr>
+            <tr>
+              <td>深圳大学</td>
+              <td>深圳大学</td>
+              <td>深圳大学</td>
+              <td>深圳大学</td>
+            </tr>
+            <tr>
+              <td>深圳大学</td>
+              <td>深圳大学</td>
+              <td>深圳大学</td>
+              <td>深圳大学</td>
+            </tr>
+            <tr>
+              <td>深圳大学</td>
+              <td>深圳大学</td>
+              <td>深圳大学</td>
+              <td>深圳大学</td>
+            </tr>
+            <tr>
+              <td>深圳大学</td>
+              <td>深圳大学</td>
+              <td>深圳大学</td>
+              <td>深圳大学</td>
+            </tr>
+            <tr>
+              <td>深圳大学</td>
+              <td>深圳大学</td>
+              <td>深圳大学</td>
+              <td>深圳大学</td>
+            </tr>
+            <tr>
+              <td>深圳大学</td>
+              <td>深圳大学</td>
+              <td>深圳大学</td>
+              <td>深圳大学</td>
+            </tr>
+            <tr>
+              <td>深圳大学</td>
+              <td>深圳大学</td>
+              <td>深圳大学</td>
+              <td>深圳大学</td>
+            </tr>
+            <tr>
+              <td>深圳大学</td>
+              <td>深圳大学</td>
+              <td>深圳大学</td>
+              <td>深圳大学</td>
+            </tr>
+            <tr>
+              <td>深圳大学</td>
+              <td>深圳大学</td>
+              <td>深圳大学</td>
+              <td>深圳大学</td>
+            </tr>
+            <tr>
+              <td>深圳大学</td>
+              <td>深圳大学</td>
+              <td>深圳大学</td>
+              <td>深圳大学</td>
+            </tr>
+            <tr>
+              <td>深圳大学</td>
+              <td>深圳大学</td>
+              <td>深圳大学</td>
+              <td>深圳大学</td>
+            </tr>
+            <tr>
+              <td>深圳大学</td>
+              <td>深圳大学</td>
+              <td>深圳大学</td>
+              <td>深圳大学</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <h3>dome second</h3>
+  <div id="constrainer2">
+    <table>
+      <thead>
+        <th>深圳大学</th>
+        <th>深圳大学</th>
+        <th>深圳大学</th>
+        <th>深圳大学</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>深圳大学</td>
+          <td>深圳大学</td>
+          <td>深圳大学</td>
+          <td>深圳大学</td>
+        </tr>
+        <tr>
+          <td>深圳大学</td>
+          <td>深圳大学</td>
+          <td>深圳大学</td>
+          <td>深圳大学</td>
+        </tr>
+        <tr>
+          <td>深圳大学</td>
+          <td>深圳大学</td>
+          <td>深圳大学</td>
+          <td>深圳大学</td>
+        </tr>
+        <tr>
+          <td>深圳大学</td>
+          <td>深圳大学</td>
+          <td>深圳大学</td>
+          <td>深圳大学</td>
+        </tr>
+        <tr>
+          <td>深圳大学</td>
+          <td>深圳大学</td>
+          <td>深圳大学</td>
+          <td>深圳大学</td>
+        </tr>
+        <tr>
+          <td>深圳大学</td>
+          <td>深圳大学</td>
+          <td>深圳大学</td>
+          <td>深圳大学</td>
+        </tr>
+        <tr>
+          <td>深圳大学</td>
+          <td>深圳大学</td>
+          <td>深圳大学</td>
+          <td>深圳大学</td>
+        </tr>
+        <tr>
+          <td>深圳大学</td>
+          <td>深圳大学</td>
+          <td>深圳大学</td>
+          <td>深圳大学</td>
+        </tr>
+        <tr>
+          <td>深圳大学</td>
+          <td>深圳大学</td>
+          <td>深圳大学</td>
+          <td>深圳大学</td>
+        </tr>
+        <tr>
+          <td>深圳大学</td>
+          <td>深圳大学</td>
+          <td>深圳大学</td>
+          <td>深圳大学</td>
+        </tr>
+        <tr>
+          <td>深圳大学</td>
+          <td>深圳大学</td>
+          <td>深圳大学</td>
+          <td>深圳大学</td>
+        </tr>
+        <tr>
+          <td>深圳大学</td>
+          <td>深圳大学</td>
+          <td>深圳大学</td>
+          <td>深圳大学</td>
+        </tr>
+        <tr>
+          <td>深圳大学</td>
+          <td>深圳大学</td>
+          <td>深圳大学</td>
+          <td>深圳大学</td>
+        </tr>
+        <tr>
+          <td>深圳大学</td>
+          <td>深圳大学</td>
+          <td>深圳大学</td>
+          <td>深圳大学</td>
+        </tr>
+        <tr>
+          <td>深圳大学</td>
+          <td>深圳大学</td>
+          <td>深圳大学</td>
+          <td>深圳大学</td>
+        </tr>
+        <tr>
+          <td>深圳大学</td>
+          <td>深圳大学</td>
+          <td>深圳大学</td>
+          <td>深圳大学</td>
+        </tr>
+        <tr>
+          <td>深圳大学</td>
+          <td>深圳大学</td>
+          <td>深圳大学</td>
+          <td>深圳大学</td>
+        </tr>
+        <tr>
+          <td>深圳大学</td>
+          <td>深圳大学</td>
+          <td>深圳大学</td>
+          <td>深圳大学</td>
+        </tr>
+        <tr>
+          <td>深圳大学</td>
+          <td>深圳大学</td>
+          <td>深圳大学</td>
+          <td>深圳大学</td>
+        </tr>
+        <tr>
+          <td>深圳大学</td>
+          <td>深圳大学</td>
+          <td>深圳大学</td>
+          <td>深圳大学</td>
+        </tr>
+        <tr>
+          <td>深圳大学</td>
+          <td>深圳大学</td>
+          <td>深圳大学</td>
+          <td>深圳大学</td>
+        </tr>
+        <tr>
+          <td>深圳大学</td>
+          <td>深圳大学</td>
+          <td>深圳大学</td>
+          <td>深圳大学</td>
+        </tr>
+        <tr>
+          <td>深圳大学</td>
+          <td>深圳大学</td>
+          <td>深圳大学</td>
+          <td>深圳大学</td>
+        </tr>
+        <tr>
+          <td>深圳大学</td>
+          <td>深圳大学</td>
+          <td>深圳大学</td>
+          <td>深圳大学</td>
+        </tr>
+        <tr>
+          <td>深圳大学</td>
+          <td>深圳大学</td>
+          <td>深圳大学</td>
+          <td>深圳大学</td>
+        </tr>
+        <tr>
+          <td>深圳大学</td>
+          <td>深圳大学</td>
+          <td>深圳大学</td>
+          <td>深圳大学</td>
+        </tr>
+        <tr>
+          <td>深圳大学</td>
+          <td>深圳大学</td>
+          <td>深圳大学</td>
+          <td>深圳大学</td>
+        </tr>
+        <tr>
+          <td>深圳大学</td>
+          <td>深圳大学</td>
+          <td>深圳大学</td>
+          <td>深圳大学</td>
+        </tr>
+        <tr>
+          <td>深圳大学</td>
+          <td>深圳大学</td>
+          <td>深圳大学</td>
+          <td>深圳大学</td>
+        </tr>
+        <tr>
+          <td>深圳大学</td>
+          <td>深圳大学</td>
+          <td>深圳大学</td>
+          <td>深圳大学</td>
+        </tr>
+        <tr>
+          <td>深圳大学</td>
+          <td>深圳大学</td>
+          <td>深圳大学</td>
+          <td>深圳大学</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <footer>
+    <p>叶泳洲2019122132</p>
+  </footer>
+</body>
+
+</html>

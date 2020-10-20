@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>文字界面</title>
+</head>
+
+<body>
+
+  <header>
+    <h2>文字界面</h2>
+  </header>
+  <section>
+    <div>
+      <article>
+        <h2>软件部</h2>
+        <p>软件部注重于培养成员的编程能力与思维，在这里你将学习数据处理、前后端、小程序、游戏开发</p>
+        <p>我们注重工程技术和团队合作，提供开放的编程技术交流平台。</p>
+      </article>
+      <article>
+        <h2>硬件部</h2>
+        <p>你可以在这里掌握基础的焊接技术，入门51、STM32单片机及相关软件应用，学习各种硬件知识和了解协议</p>
+        <p>走进Linux的世界，和师兄师姐们一起学习制作炫酷的光立方、骰子灯，实现各种功能的智能小车。</p>
+      </article>
+      <article>
+        <h2>宣传部</h2>
+        <p>导航栏是指位于页面顶部或者侧边区域的，在页眉横幅图片上边或下边的一排水平导航按钮，它起着链接站点或者软件内的各个页面的作用。</p>
+        <p>宣传部负责管理和运营电协的公众号，设计制作宣传海报与视频等，同时对接外部合作事宜，协助社团开展各项工作。</p>
+      </article>
+
+    </div>
+
+  </section>
+  <footer>
+    <p>叶泳洲2019122132</p>
+  </footer>
+
+</body>
+
+<style>
+  * {
+    box-sizing: border-box;
+  }
+
+  p {
+    text-indent: 2em;
+    line-height: 2;
+  }
+
+
+  header {
+    background-color: #666;
+    padding: 10px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+    height: 30rpx;
+  }
+
+
+  nav {
+    float: left;
+    width: 0%;
+    height: 300px;
+    background: #ccc;
+    padding: 20px;
+  }
+
+
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  article {
+    float: left;
+    padding: 20px;
+    padding-bottom: 0px;
+    width: 100%;
+    background-color: #f1f1f1;
+    border: 4px solid #666666;
+    overflow: auto;
+
+  }
+
+
+  section:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+
+  footer {
+    background-color: #777;
+    padding: 10px;
+    text-align: center;
+    color: white;
+  }
+
+  div {
+    overflow: auto;
+  }
+
+
+  @media (max-width: 600px) {
+
+    nav,
+    article {
+      width: 100%;
+      height: auto;
+    }
+  }
+</style>
+
+</html>
